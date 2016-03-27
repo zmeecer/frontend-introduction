@@ -1,0 +1,21 @@
+{
+  "name": "frontend-introdution",
+  "version": "1.0.0",
+  "description": "Auxiliary presentation about frontend basics ",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmeecer/frontend-introdution.git"
+  },
+  "keywords": [
+    "frontend",
+    "introdution"
+  ],
+  "author": "Zmeecer Jarasevic zmeecer@gmail.com",
+  "license": "MIT",
+  "homepage": "https://github.com/zmeecer/frontend-introdution#readme"
+}

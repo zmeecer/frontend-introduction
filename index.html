@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Frontend basics</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="styles/screen-16x10.css">
+</head>
+<body class="shower list">
+	<style>
+		.slide {
+			padding: 48px 100px 0;
+		}
+	</style>
+	<header class="caption">
+		<h1>Frontend Introdution</h1>
+		<p>Źmicier Jaraševič</p>
+	</header>
+	<section class="slide">
+		<h2 class="shout">HTML &amp; HTTP</h2>
+	</section>
+	<section class="slide">
+		<h2>HTML vs XHTML vs XML</h2>
+		<ul>
+			<li>Optional end HTML tags: li, dd, p, td and many other</li>
+			<li>Attribute optimization: checked, disables, required, etc</li>
+		</ul>
+		<ul>
+			<li>XHTML is HTML written as XML but stricter</li>
+			<li>XHTML stands for EXtensible HyperText Markup Language</li>
+		</ul>
+		<ul>
+			<li>Goal: emphasize simplicity, generality and usability</li>
+			<li>For what: documents, data structure, services</li>
+			<li>Document Type Definition, XML Schema, XSLT</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Load and Render</h2>
+		<ul>
+			<li>new URL -> request (http) -> DNS -> sending</li>
+			<li>receiving -> parse HTML -> build DOM</li>
+			<li>load CSS, parse it, forming CSSOM, apply to DOM</li>
+			<li>load JS and execute
+				<ul>
+					<li>head/body placement</li>
+					<li>async/css blocking</li>
+					<li>minification</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>HTTP</h2>
+		<ul>
+			<li>Hypertext Transfer Protocol</li>
+			<li>What is it? The foundation of data communication for the World Wide Web</li>
+			<li>History, versions, structure, alternatives</li>
+			<li>Methods: GET, POST, DELETE, PUT/PATCH, HEAD, OPTIONS</li>
+			<li>Security and Encryption</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Semantic Web/Page</h2>
+		<figure>
+			<blockquote>
+				<p>The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries</p>
+			</blockquote>
+		<figure>
+		<ul>
+			<li>Meta data for HTML page: keywords, desctiption</li>
+			<li>Specific attributes: Microformats, RDFa, Microdata</li>
+			<li>HTML5 elements: article, navigation, main, mark...
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>REST API</h2>
+		<ul>
+			<li>Representational state transfer</li>
+			<li>Level 0 - HTTP as a transport system</li>
+			<li>Level 1 - Identification of resources</li>
+			<li>Level 2 - HTTP Verbs</li>
+			<li>Level 3 - Hypermedia as the Engine of Application State</li>
+		</ul>
+	</section>
+	<section class="slide">
+		<h2>Templating</h2>
+		<ul>
+			<li>JS: Jade, Handlebars, Underscore, Mustache</li>
+			<li>HAML, Razor, JSX, Angular, ...</li>
+			<li>Goals: speed, readable, reusing</li>
+		</ul>
+		<pre><code>&lt;script id=&quot;president-template&quot; type=&quot;text/template&quot;&gt;
+	{{#presidents}}
+		&lt;li&gt;{{name}} ({{born}}-{{death}})&lt;/li&gt;
+	{{/presidents}}
+&lt;/script&gt;
+		</code></pre>
+	</section>
+	<section class="slide">
+		<h2>SVG</h2>
+	</section>
+	<section class="slide">
+		<h2>Striped Table</h2>
+		<table class="striped">
+		<tr>
+			<th scope="col">Gentrify</th>
+			<th>Twee</th>
+			<th>Artisan</th>
+			<th>Banksy</th>
+		</tr>
+		<tr>
+			<th scope="row">Messenger</th>
+			<td>Mixtape</td>
+			<td>Small batch</td>
+			<td>Bicycle rights</td>
+		</tr>
+		<tr>
+			<th scope="row">Meggings</th>
+			<td>Freegan</td>
+			<td>Retro biodiesel</td>
+			<td>Slow-carb</td>
+		</tr>
+		<tr>
+			<th scope="row">Vegan</th>
+			<td>Occupy</td>
+			<td>Normcore</td>
+			<td>Put a bird on it</td>
+		</tr>
+		<tr>
+			<th scope="row">Next level</th>
+			<td>Selfies</td>
+			<td>Sustainable</td>
+			<td>Organic</td>
+		</tr>
+		<tr>
+			<th scope="row">Umami</th>
+			<td>Asymmetrical</td>
+			<td>Keytar</td>
+			<td>Craft beer</td>
+		</tr>
+		<tr>
+			<th scope="row">Biodiesel</th>
+			<td>Haven’t heard</td>
+			<td>Skateboard</td>
+			<td>Farm-to-table</td>
+		</tr>
+		</table>
+	</section>
+	<section class="slide">
+		<h2>Plain Code Listing</h2>
+		<pre><code>&lt;html lang="en"&gt;
+<mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span>
+	&lt;title&gt;Shower&lt;/title&gt;
+	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;
+	&lt;link rel="stylesheet" href="screen.css"&gt;
+	&lt;script src="script.js"&gt;&lt;/script&gt;
+<mark>&lt;/head&gt;</mark></code></pre>
+	</section>
+	<section class="slide">
+		<h2>Numbered Code Listing</h2>
+		<pre>
+			<code>&lt;html lang="en"&gt;</code>
+			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+			<code>	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code>	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code><mark>&lt;/head&gt;</mark></code>
+		</pre>
+	</section>
+	<section class="slide">
+		<h2>Highlighted Code Lines</h2>
+		<pre>
+			<code>&lt;html lang="en"&gt;</code>
+			<code class="mark">&lt;head&gt; <span class="comment">&lt;!--Comment--&gt;</span></code>
+			<code>	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code>	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code class="mark">&lt;/head&gt;</code>
+		</pre>
+	</section>
+	<section class="slide">
+		<h2>Hidden Code Steps</h2>
+		<pre>
+			<code class="next">&lt;html lang="en"&gt;</code>
+			<code class="next"><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+			<code class="next">	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code class="next">	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code class="next">	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code class="next">	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code class="next"><mark>&lt;/head&gt;</mark></code>
+		</pre>
+	</section>
+	<section class="slide">
+		<h2>Highlighted Code Steps</h2>
+		<pre>
+			<code class="mark next">&lt;html lang="en"&gt;</code>
+			<code>&lt;head&gt; <span class="comment">&lt;!--Comment--&gt;</span></code>
+			<code class="mark next">	&lt;title&gt;Shower&lt;/title&gt;</code>
+			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+			<code class="mark next">	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
+			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+			<code class="mark next">&lt;/head&gt;</code>
+		</pre>
+	</section>
+	<section class="slide grid">
+		<h2>Grid Slide</h2>
+	</section>
+	<section class="slide white">
+		<h2>White Slide</h2>
+	</section>
+	<section class="slide black">
+		<h2>Black Slide</h2>
+	</section>
+	<section class="slide">
+		<h2 class="shout">Shout</h2>
+	</section>
+	<section class="slide">
+		<figure>
+			<img class="cover" src="pictures/exact.png" alt="">
+			<figcaption class="white">Copyright © 2015 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
+		</figure>
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/tall.png" alt="">
+	</section>
+	<section class="slide">
+		<img class="cover" src="pictures/wide.png" alt="">
+	</section>
+	<section class="slide" data-timing="00:03">
+		<h2 class="shout">Timer</h2>
+	</section>
+	<section class="slide">
+		<h2>List Navigation</h2>
+		<ol>
+			<li>Ennui keffiyeh thundercats</li>
+			<li class="next">Jean shorts biodiesel</li>
+			<li class="next">Terry richardson, swag blog</li>
+			<li class="next">Locavore umami vegan helvetica</li>
+			<li class="next">Fingerstache kale chips</li>
+		</ol>
+		<p class="next">Before they sold out master</p>
+	</section>
+	<div class="progress"></div>
+	<footer class="badge">
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+	</footer>
+	<script src="shower.min.js"></script>
+</body>
+</html>
