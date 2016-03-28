@@ -36,7 +36,7 @@
 			<li>Document Type Definition, XML Schema, XSLT</li>
 		</ul>
 	</section>
-	<section class="slide">
+	<section class="slide" style="background: #fff url('images/page-load.png') right no-repeat;">
 		<h2>Load and Render</h2>
 		<ul>
 			<li>new URL -> request (http) -> DNS -> sending</li>
@@ -69,19 +69,39 @@
 			</blockquote>
 		<figure>
 		<ul>
-			<li>Meta data for HTML page: keywords, desctiption</li>
+			<li>Meta data for HTML page: keywords, description</li>
 			<li>Specific attributes: Microformats, RDFa, Microdata</li>
 			<li>HTML5 elements: article, navigation, main, mark...
 		</ul>
+    <pre>
+      <code>&lt;meta name=&quot;<mark>keywords</mark>&quot; content=&quot;computing, computer studies, ...&quot; /&gt;</code>
+      <code>&lt;meta name=&quot;<mark>description</mark>&quot; content=&quot;Cheap widgets for sale&quot; /&gt;</code>
+		</pre>
+
 	</section>
-	<section class="slide">
+  <section class="slide">
+		<h2>Semantic Web/Page</h2>
+    <pre>
+      <code>&lt;div class=&quot;<mark>vcard</mark>&quot;&gt;</code>
+      <code>  &lt;span class=&quot;<mark>fn</mark>&quot;&gt;Mark Watney&lt;/span&gt;</code>
+      <code>  &lt;div class=&quot;<mark>org</mark>&quot;&gt;NASA&lt;/div&gt;</code>
+      <code>  &lt;div class=&quot;<mark>adr</mark>&quot;&gt;</code>
+      <code>    &lt;span class=&quot;<mark>country-name</mark>&quot;&gt;USA&lt;/span&gt;</code>
+      <code>  &lt;/div&gt;</code>
+      <code>&lt;/div&gt;</code>
+    </pre>
+  </section>
+	<section class="slide" style="background: #fff url('images/rest.png') right bottom no-repeat;">
 		<h2>REST API</h2>
 		<ul>
 			<li>Representational state transfer</li>
 			<li>Level 0 - HTTP as a transport system</li>
 			<li>Level 1 - Identification of resources</li>
 			<li>Level 2 - HTTP Verbs</li>
-			<li>Level 3 - Hypermedia as the Engine of Application State</li>
+			<li>
+          Level 3 - Hypermedia as the Engine
+          <br />of Application State
+      </li>
 		</ul>
 	</section>
 	<section class="slide">
@@ -91,163 +111,51 @@
 			<li>HAML, Razor, JSX, Angular, ...</li>
 			<li>Goals: speed, readable, reusing</li>
 		</ul>
-		<pre><code>&lt;script id=&quot;president-template&quot; type=&quot;text/template&quot;&gt;
-	{{#presidents}}
-		&lt;li&gt;{{name}} ({{born}}-{{death}})&lt;/li&gt;
-	{{/presidents}}
-&lt;/script&gt;
-		</code></pre>
+		<pre>
+      <code>&lt;script id=&quot;<mark>president-template</mark>&quot; type=&quot;<mark>text/template<mark>&quot;&gt;</code>
+      <code>  {{#presidents}}</code>
+      <code>    &lt;li&gt;<mark>{{name}}</mark> ({{born}}-{{death}})&lt;/li&gt;</code>
+      <code>  {{/presidents}}</code>
+      <code>&lt;/script&gt;</code>
+		</pre>
+	</section>
+  <section class="slide" style="background: #fff url('images/grid.png') center bottom no-repeat;">
+		<h2>Grid Layout</h2>
+    <ul>
+			<li>CSS Grid Layout</li>
+			<li>Atomic design</li>
+      <li>Frameworks</li>
+		</ul>
 	</section>
 	<section class="slide">
 		<h2>SVG</h2>
+    <ul>
+			<li>SVG stands for Scalable Vector Graphics</li>
+			<li>SVG is used to define vector-based graphics for the Web</li>
+			<li>SVG defines the graphics in XML format</li>
+		</ul>
+    <pre>
+    <code>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot;&gt;</code>
+    <code> &lt;<mark>rect</mark> x=&quot;25&quot; y=&quot;25&quot; width=&quot;200&quot; height=&quot;200&quot; <mark>fill</mark>=&quot;lime&quot;/&gt;</code>
+    <code> &lt;<mark>circle</mark> cx=&quot;125&quot; cy=&quot;125&quot; <mark>r</mark>=&quot;75&quot; fill=&quot;orange&quot;/&gt;</code>
+    <code> &lt;<mark>polyline</mark> points=&quot;50,150 50,200 200,200 200,100&quot; fill=&quot;none&quot;/&gt;</code>
+    <code> &lt;<mark>line</mark> x1=&quot;50&quot; y1=&quot;50&quot; x2=&quot;200&quot; y2=&quot;200&quot; <mark>stroke</mark>=&quot;blue&quot;/&gt;</code>
+    </pre>
 	</section>
 	<section class="slide">
-		<h2>Striped Table</h2>
-		<table class="striped">
-		<tr>
-			<th scope="col">Gentrify</th>
-			<th>Twee</th>
-			<th>Artisan</th>
-			<th>Banksy</th>
-		</tr>
-		<tr>
-			<th scope="row">Messenger</th>
-			<td>Mixtape</td>
-			<td>Small batch</td>
-			<td>Bicycle rights</td>
-		</tr>
-		<tr>
-			<th scope="row">Meggings</th>
-			<td>Freegan</td>
-			<td>Retro biodiesel</td>
-			<td>Slow-carb</td>
-		</tr>
-		<tr>
-			<th scope="row">Vegan</th>
-			<td>Occupy</td>
-			<td>Normcore</td>
-			<td>Put a bird on it</td>
-		</tr>
-		<tr>
-			<th scope="row">Next level</th>
-			<td>Selfies</td>
-			<td>Sustainable</td>
-			<td>Organic</td>
-		</tr>
-		<tr>
-			<th scope="row">Umami</th>
-			<td>Asymmetrical</td>
-			<td>Keytar</td>
-			<td>Craft beer</td>
-		</tr>
-		<tr>
-			<th scope="row">Biodiesel</th>
-			<td>Haven’t heard</td>
-			<td>Skateboard</td>
-			<td>Farm-to-table</td>
-		</tr>
-		</table>
-	</section>
-	<section class="slide">
-		<h2>Plain Code Listing</h2>
-		<pre><code>&lt;html lang="en"&gt;
-<mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span>
-	&lt;title&gt;Shower&lt;/title&gt;
-	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;
-	&lt;link rel="stylesheet" href="screen.css"&gt;
-	&lt;script src="script.js"&gt;&lt;/script&gt;
-<mark>&lt;/head&gt;</mark></code></pre>
-	</section>
-	<section class="slide">
-		<h2>Numbered Code Listing</h2>
-		<pre>
-			<code>&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>	&lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Highlighted Code Lines</h2>
-		<pre>
-			<code>&lt;html lang="en"&gt;</code>
-			<code class="mark">&lt;head&gt; <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>	&lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
-			<code class="mark">&lt;/head&gt;</code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Hidden Code Steps</h2>
-		<pre>
-			<code class="next">&lt;html lang="en"&gt;</code>
-			<code class="next"><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code class="next">	&lt;title&gt;Shower&lt;/title&gt;</code>
-			<code class="next">	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code class="next">	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code class="next">	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
-			<code class="next"><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-	<section class="slide">
-		<h2>Highlighted Code Steps</h2>
-		<pre>
-			<code class="mark next">&lt;html lang="en"&gt;</code>
-			<code>&lt;head&gt; <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code class="mark next">	&lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>	&lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code class="mark next">	&lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code>	&lt;script src="script.js"&gt;&lt;/script&gt;</code>
-			<code class="mark next">&lt;/head&gt;</code>
-		</pre>
-	</section>
-	<section class="slide grid">
-		<h2>Grid Slide</h2>
-	</section>
-	<section class="slide white">
-		<h2>White Slide</h2>
-	</section>
-	<section class="slide black">
-		<h2>Black Slide</h2>
-	</section>
-	<section class="slide">
-		<h2 class="shout">Shout</h2>
-	</section>
-	<section class="slide">
-		<figure>
-			<img class="cover" src="pictures/exact.png" alt="">
-			<figcaption class="white">Copyright © 2015 <a href="">Yours Truly</a>, Famous Inc.</figcaption>
-		</figure>
-	</section>
-	<section class="slide">
-		<img class="cover" src="pictures/tall.png" alt="">
-	</section>
-	<section class="slide">
-		<img class="cover" src="pictures/wide.png" alt="">
-	</section>
-	<section class="slide" data-timing="00:03">
-		<h2 class="shout">Timer</h2>
-	</section>
-	<section class="slide">
-		<h2>List Navigation</h2>
-		<ol>
-			<li>Ennui keffiyeh thundercats</li>
-			<li class="next">Jean shorts biodiesel</li>
-			<li class="next">Terry richardson, swag blog</li>
-			<li class="next">Locavore umami vegan helvetica</li>
-			<li class="next">Fingerstache kale chips</li>
-		</ol>
-		<p class="next">Before they sold out master</p>
+    <h2 class="shout">
+      Thank you!
+    </h2>
+    <p style="position: absolute; z-index: 1;">
+      <img src="images/gmail.png" style="width: 24px;" />
+      <a href="mailto:zmeecer@gmail.com" style="color: #fff; vertical-align: top; line-height: 32px;">zmeecer</a>
+      <img src="images/github.svg" style="width: 24px;" />
+      <a style="color: #fff; vertical-align: top; line-height: 32px;" href="http://github.com/zmeecer">zmeecer</a>
+      <img src="images/linkedin.png" style="width: 24px;" />
+      <a style="color: #fff; vertical-align: top; line-height: 32px;" href="http://github.com/zmeecer">zmeecer</a>
+    </p>
 	</section>
 	<div class="progress"></div>
-	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
-	</footer>
 	<script src="shower.min.js"></script>
 </body>
 </html>
