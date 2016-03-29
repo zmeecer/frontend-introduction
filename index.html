@@ -12,6 +12,17 @@
 		.slide {
 			padding: 48px 100px 0;
 		}
+    table.imageable td {
+      text-align: center;
+    }
+    table.imageable img {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+    }
+    .slide table tr:not(:last-of-type)>* {
+      background: none;
+    }
 	</style>
 	<header class="caption">
 		<h1>Frontend Introdution</h1>
@@ -142,7 +153,113 @@
     <code> &lt;<mark>line</mark> x1=&quot;50&quot; y1=&quot;50&quot; x2=&quot;200&quot; y2=&quot;200&quot; <mark>stroke</mark>=&quot;blue&quot;/&gt;</code>
     </pre>
 	</section>
-	<section class="slide">
+  <section class="slide">
+		<h2 class="shout">CSS</h2>
+	</section>
+  <section class="slide" style="background: #fff url('images/browser-styles.png') right center no-repeat;">
+		<h2>Styles applying</h2>
+    <ul>
+			<li>Default by browser</li>
+			<li>External CSS</li>
+			<li>Internal CSS</li>
+      <li>Inline styles</li>
+		</ul>
+  </section>
+  <section class="slide">
+		<h2>reset.css vs. normalize.css</h2>
+    <p>
+      The goal of <b>Reset.css</b/> is to reduce browser
+      inconsistencies in things like default line heights, margins and
+      font sizes of headings, and so on.
+    </p>
+    <p>
+      <b>Normalize.css</b> makes browsers render all elements more consistently
+      and in line with modern standards.
+  </section>
+  <section class="slide" style="background: #fff url('images/reset.png') center top no-repeat;">
+  </section>
+  <section class="slide" style="background: #fff url('images/specificity-calculationbase.png') center center no-repeat;">
+		<h2>Selectors' weight</h2>
+	</section>
+  <section class="slide" style="background: #fff url('images/cssspecificity-calc-1.png') center center no-repeat;">
+		<h2>Selectors' weight</h2>
+	</section>
+  <section class="slide">
+		<h2>responsive vs. adaptive</h2>
+    <p>Responsive websites <b>respond</b> to the size of the browser at <b>any</b> given point.</p>
+    <p>Adaptive websites <b>adapt</b> to the width of the browser at a <b>specific</b> points.</p>
+    <img src="images/rwd-vs-adapt-example.gif" width="100%" />
+	</section>
+  <section class="slide">
+		<h2>UI&amp;UX</h2>
+    <ul>
+      <li><b>U</b>ser <b>I</b>nterface - human–machine interaction</li>
+      <ul>
+        <li>clarity &amp; familiarity</li>
+        <li>efficiency &amp; </li>
+        <li>forgiveness &amp; responsiveness</li>
+      </ul>
+      <li><b>U</b>ser e<b>X</b>perience - practical, experiential, affective, meaningful aspects of human–computer interaction</li>
+      <ul>
+        <li>marketing&amp;branding</li>
+        <li>visual design</li>
+        <li>usability</li>
+      </ul>
+    </ul>
+	</section>
+  <section class="slide">
+		<h2>float attribute</h2>
+    <img src="images/web-text-wrap.png" />
+    <img src="images/unclearedfooter.png" style="float: right;"/>
+	</section>
+  <section class="slide">
+		<h2>margin vs. padding</h2>
+    <ul>
+      <li>box-sizing</li>
+      <li>margin overlay</li>
+      <li>background</li>
+    </ul>
+    <img src="images/PeSIJ.gif" style="position: absolute; bottom: 100px; right: 100px;"/>
+	</section>
+  <section class="slide">
+		<h2>vendors' prefixes</h2>
+    <ul>
+      <li>-webkit-, -moz-, -ms-, -o-</li>
+    </ul>
+    <ul>
+      <li>background: -webkit-gradient(linear, left top, color-stop(0%,rgba(238, ...</li>
+      <li>background: -webkit-linear-gradient(-45deg,  rgba(238,238,238,1) 0%, ...</li>
+      <li>background: linear-gradient(-45deg,  rgba(238,238,238,1) 0%, ...</li>
+      <li>filter: progid:DXImageTransform.Microsoft.gradient( ...</li>
+    </ul>
+    <p>Solution: <b>autoprefixer / caniuse / statcounter<b></p>
+	</section>
+  <section class="slide">
+		<h2>Preproccessors</h2>
+    <table class="imageable">
+      <tr>
+        <td>
+          <img src="images/sasss.svg" />
+          SASS/SCSS
+        </td>
+        <td>
+          <img src="images/less.png" />
+          LESS
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/stylus.svg" />
+          Stylus
+        </td>
+        <td>
+          <img src="images/postcss.svg" />
+          PostCSS
+        </td>
+      </tr>
+    </table>
+  </section>
+  <section class="slide">
     <h2 class="shout">
       Thank you!
     </h2>
