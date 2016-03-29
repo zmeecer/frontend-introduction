@@ -14,9 +14,11 @@
 		}
     table.imageable td {
       text-align: center;
+			vertical-align: middle;
     }
     table.imageable img {
-      width: 40%;
+      max-width: 50%;
+			min-width: 200px;
       display: block;
       margin: 0 auto;
     }
@@ -271,6 +273,7 @@
       <li>Functional: high-order function, lambda expressions</li>
       <li>Object-oriented: classes, methods, properties</li>
     </ul>
+		<img src="images/funnyjavascript.gif" width="50%" style="float: right"/>
   </section>
   <section class="slide">
     <h2>OOP</h2>
@@ -278,20 +281,88 @@
   <section class="slide">
     <h2>Functional</h2>
   </section>
-  <section class="slide">
-    <h2>'this' context</h2>
-  </section>
-  <section class="slide">
+	<section class="slide">
     <h2>Global Scope</h2>
+		<ul>
+			<img src="images/nodejs-new-white-pantone.png" style="width: 420px; float: right; background: #AAA; padding: 40px;" />
+			<li><mark>window</mark> - browser</li>
+			<li><mark>global</mark> - node.js</li>
+			<li>var, let/const</li>
+			<li>function scope</li>
+			<li>decorative constructions: if, for, etc</li>
+		</ul>
+  </section>
+  <section class="slide" style="background: #fff url(images/this.png) 80% center no-repeat; background-size: 300px;">
+    <h2>'this' context</h2>
+		<ul>
+			<li>function() -> global scope</li>
+			<li>new f() -> created object</li>
+			<li>f: function() -> parent object</li>
+			<li>() => {...} -> previous scope</li>
+			<li>
+				apply, call, <b>bind</b>
+				<ul>
+					<li>var g = bind(f, "Context");</li>
+				</ul>
+			</li>
+		</ul>
   </section>
   <section class="slide">
     <h2>Closure</h2>
+		<p>
+			Closures are functions that refer to independent (free) variables.
+			In other words, the function defined in the closure 'remembers'
+			the environment in which it was created.
+		</p>
+		<ul>
+			<li>LexicalEnvironment: function params + parent scope</li>
+			<li>Emulating private methods with closures</li>
+			<li>Returning functions</li>
+		</ul>
+		<img width="250" src="images/closure.jpg" style="float: right;"/>
   </section>
-  <section class="slide">
+	<section class="slide" style="background: #fff url(images/troll.png) 80% center no-repeat;">
+		<pre>
+			<code>function makeAdder(x) {</code>
+			<code>  return function(y) {</code>
+			<code>    return x + y;</code>
+			<code>  };</code>
+			<code>}</code>
+			<code></code>
+			<code>var add5 = makeAdder(5);</code>
+			<code>var add10 = makeAdder(10);</code>
+			<code></code>
+			<code>console.log(add5(2));  // 7</code>
+			<code>console.log(add10(2)); // 12</code>
+		</pre>
+	</section>
+  <section class="slide" style="background: #fff url(images/strict.jpg) 80% center no-repeat; background-size: 400px;">
     <h2>'use strict'</h2>
+		<ul>
+			<li>function x(p1, p1) <mark>//error</mark></li>
+			<li>delete x <mark>//error</mark></li>
+			<li>pi = 4 <mark>//error</mark></li>
+			<li>with (Math){x = cos(2)} <mark>//error</mark></li>
+			<li>eval ("var x = 2"); <mark>//error</mark></li>
+			<li>+ some "keywords" <mark>//error!</mark></li>
+		</ul>
   </section>
   <section class="slide">
     <h2>Frameworks</h2>
+		<table class="imageable">
+			<tr>
+				<td><img src="images/frameworks/backbonejs.png"/></td>
+				<td><img src="images/frameworks/angular.png"/></td>
+				<td><img src="images/frameworks/jquery.gif"/></td>
+				<td><img src="images/frameworks/vue.png"/></td>
+			</tr>
+			<tr>
+				<td><img src="images/frameworks/ember.png"/></td>
+				<td><img src="images/frameworks/knockoutjs.png"/></td>
+				<td><img src="images/frameworks/polymer.png"/></td>
+				<td><img src="images/frameworks/react.png"/></td>
+			</tr>
+		</table>
   </section>
   <section class="slide">
     <h2>ES6 features</h2>
