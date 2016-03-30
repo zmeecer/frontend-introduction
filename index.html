@@ -234,7 +234,7 @@
       <li>background: linear-gradient(-45deg,  rgba(238,238,238,1) 0%, ...</li>
       <li>filter: progid:DXImageTransform.Microsoft.gradient( ...</li>
     </ul>
-    <p>Solution: <b>autoprefixer / caniuse / statcounter<b></p>
+    <p>Solution: <b>autoprefixer / caniuse / statcounter</b></p>
 	</section>
   <section class="slide">
 		<h2>Preproccessors</h2>
@@ -277,9 +277,23 @@
   </section>
   <section class="slide">
     <h2>OOP</h2>
+    <ol>
+      <li>Inheritance: prototype, constructors, es6</li>
+      <li>Encapsulation: clojure, es6 properties</li>
+      <li>Polymorphism: dynamic lang, prototype/es6</li>
+      <img src="images/ecma.jpg" width="50%" style="display: block; margin: 0 auto;"/>
+    </ol>
   </section>
   <section class="slide">
     <h2>Functional</h2>
+    <ul>
+      <li>Func as params | High Order Function</li>
+      <li>Stateless function | Arrow-function</li>
+      <li>Some input produce some outputs</li>
+      <li>Pure function | without Side Effects</li>
+      <li>Iterators</li>
+      <img src="images/func-js.gif" width="25%" style="float: right"/>
+    </ul>
   </section>
 	<section class="slide">
     <h2>Global Scope</h2>
@@ -366,9 +380,32 @@
   </section>
   <section class="slide">
     <h2>ES6 features</h2>
+    <ul>
+      <li>Modules</li>
+      <li>Classes, properties (stage-1)</li>
+      <li>Arrow-function (lambda expression)</li>
+      <li>let, const</li>
+      <li>String formatting</li>
+      <li>Promises</li>
+      <li>default + rest + spread (+ destructing)</li>
+      <li>literals and iterators</li>
+    </ul>
   </section>
   <section class="slide">
     <h2>async / Promises</h2>
+    <p>
+      Callbacks -> Promises -> Generators (ES6) -> Async/await (ES7)
+    </p>
+    <pre style="padding-left: 100px;">
+      <code>async function save(Something) {</code/>
+      <code>  try {</code>
+      <code>    await Something.save()</code>
+      <code>  } catch (ex) {</code>
+      <code>    //error handling</code>
+      <code>  }</code>
+      <code>  console.log('success');</code>
+      <code>}</code>
+    </pre>
   </section>
   <section class="slide">
     <h2 class="shout">
