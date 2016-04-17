@@ -1,5 +1,5 @@
 {
-  "name": "frontend-introdution",
+  "name": "frontend-introduction",
   "version": "1.0.0",
   "description": "Auxiliary presentation about frontend basics ",
   "main": "index.js",
@@ -13,7 +13,7 @@
   },
   "keywords": [
     "frontend",
-    "introdution"
+    "introduction"
   ],
   "author": "Zmeecer Jarasevic zmeecer@gmail.com",
   "license": "MIT",
